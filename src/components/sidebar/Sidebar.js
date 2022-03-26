@@ -10,7 +10,7 @@ const Sidebar = () => {
                     SW
                 </Link>
                 <Link to='/' className="simple-text text-light logo-normal">
-                    Thesis
+                    Thesis / Project
                 </Link>
             </div>
             <div className="sidebar-wrapper ps">

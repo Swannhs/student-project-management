@@ -2,13 +2,13 @@ import {initializeApp} from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAh2LNHvY_5uhVs_fuvD1sp_CxX8XXMbk0",
-    authDomain: "kabirsir-5a393.firebaseapp.com",
-    projectId: "kabirsir-5a393",
-    storageBucket: "kabirsir-5a393.appspot.com",
-    messagingSenderId: "111652783040",
-    appId: "1:111652783040:web:902088b61ca26a607ebe25",
-    measurementId: "G-S0L9NPN0LE"
+    apiKey: process.env.apiKey,
+    authDomain: process.env.authDomain,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId,
+    measurementId: process.env.measurementId
 };
 
 export const db = getFirestore(initializeApp(firebaseConfig));
